@@ -4,6 +4,7 @@ pipeline {
         stage('Build') { 
             steps {
                 echo 'Primera integracion continua' 
+                sh 'cd fabr'
             }
         }
     }
