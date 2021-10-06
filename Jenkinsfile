@@ -1,9 +1,9 @@
 pipeline {
     agent any 
     stages {
-        stage('Test') { 
+        stage('Build') { 
             steps {
-                echo 'Arranca el proceso de pruebasgit  unitarias' 
+                echo 'Primera integracion continua' 
             }
         }
     }
