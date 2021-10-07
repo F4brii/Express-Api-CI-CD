@@ -1,11 +1,6 @@
 pipeline {
   agent any
   stages {
-    stage('CleanWorkspace') {
-        steps {
-            cleanWs()
-        }
-    }
     stage('build and test') {
       steps {
         dir('api'){
