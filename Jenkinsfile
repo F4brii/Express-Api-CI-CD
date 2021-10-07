@@ -4,7 +4,7 @@ pipeline {
     stage('build and test') {
       steps {
         dir('api'){
-            sh 'docker-compose build'
+            sh 'docker-compose buildd'
             sh 'docker-compose run --rm web npm run test'
         }
       }
