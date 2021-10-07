@@ -14,7 +14,7 @@ describe('Get /persons', () => {
             .expect(200, done)
     });
 });
-/*
+
 describe('Post /persons', () => {
     it('201 /persons', done => {
         const person = {
@@ -48,7 +48,7 @@ describe('Post /persons', () => {
             });
     });
 });
-
+/*
 describe('Get /persons/:dni', () => {
     it('200 /persons/:dni', done => {
         request(app)
