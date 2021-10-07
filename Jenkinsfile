@@ -1,10 +1,20 @@
 pipeline {
-    agent any 
-    stages {
-        stage('Test') { 
-            steps {
-                echo 'Arranca el proceso de pruebasgit  unitarias' 
-            }
+  agent any
+  stages {
+    stage('build and test') {
+      steps {
+        dir('api'){
+            sh 'docker-compose build'
+            sh 'docker-compose run --rm web npm run test'
         }
+      }
     }
+    stage('deploy') {
+      steps {
+        dir('api'){
+            sh 'docker-compose up -d'
+        }
+      }
+    }
+  }
 }
