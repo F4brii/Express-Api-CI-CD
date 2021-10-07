@@ -14,7 +14,7 @@ describe('Get /persons', () => {
             .expect(200, done)
     });
 });
-
+/*
 describe('Post /persons', () => {
     it('201 /persons', done => {
         const person = {
@@ -58,7 +58,7 @@ describe('Get /persons/:dni', () => {
             .expect(200, done)
     });
 });
-/*
+
 describe('Delete /persons/:dni', () => {
     it('200 /persons/:dni', done => {
         request(app)
