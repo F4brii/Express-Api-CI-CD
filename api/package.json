@@ -1,0 +1,25 @@
+{
+    "name": "api",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev": "nodemon index.js",
+        "test": "mocha tests/ --exit"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.17.1",
+        "mocha": "^9.1.2",
+        "pg": "^8.7.1",
+        "pg-hstore": "^2.3.4",
+        "sequelize": "^6.6.5",
+        "supertest": "^6.1.6",
+        "tcomb": "^3.2.29"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.13"
+    }
+}
